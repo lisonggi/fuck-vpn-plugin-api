@@ -11,6 +11,6 @@ dependencyResolutionManagement {
 ```
 ```kotlin
 dependencies {
-    implementation 'com.github.lisonggi:fuck-vpn-plugin-api:1.0-SNAPSHOT'
+    implementation 'com.github.lisonggi:fuck-vpn-plugin-api:1.1-SNAPSHOT'
 }
 ```
