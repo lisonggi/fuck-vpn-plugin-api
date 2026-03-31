@@ -4,7 +4,7 @@ import com.song.fuckvpn.plugin.api.entity.NodeEntity
 import com.song.fuckvpn.plugin.api.entity.PluginInfo
 
 interface NodePlugin {
-    suspend fun getPluginInfo(): PluginInfo
+    fun getPluginInfo(): PluginInfo
 
     /**
      * 生成节点
