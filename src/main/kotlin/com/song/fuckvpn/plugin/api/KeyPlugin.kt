@@ -6,5 +6,5 @@ interface KeyPlugin : NodePlugin {
     /**
      * 生成密钥
      */
-    fun generateKey(): KeyEntity
+    suspend fun generateKey(): KeyEntity
 }
