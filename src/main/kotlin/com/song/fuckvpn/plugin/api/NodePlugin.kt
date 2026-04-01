@@ -1,7 +1,7 @@
 package com.song.fuckvpn.plugin.api
 
-import com.song.fuckvpn.plugin.api.entity.NodeEntity
-import com.song.fuckvpn.plugin.api.entity.PluginInfo
+import com.song.fuckvpn.plugin.api.model.NodeData
+import com.song.fuckvpn.plugin.api.model.PluginInfo
 
 interface NodePlugin {
     fun getPluginInfo(): PluginInfo
@@ -9,5 +9,5 @@ interface NodePlugin {
     /**
      * 生成节点
      */
-    suspend fun generateNodes(): Set<NodeEntity>
+    suspend fun generateNodes(): Set<NodeData>
 }
