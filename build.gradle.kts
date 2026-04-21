@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "2.3.0"
     id("com.github.jk1.dependency-license-report") version "3.1.1"  // x-release-please-version
+    id ("maven-publish")
 }
 licenseReport {
     outputDir = "$projectDir/licenses"
@@ -26,4 +27,15 @@ kotlin {
 
 tasks.test {
     useJUnitPlatform()
+}
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            groupId = "com.song"
+            artifactId = "fuck-vpn-plugin-api"
+            version = "library"
+
+            from(components["java"])
+        }
+    }
 }
