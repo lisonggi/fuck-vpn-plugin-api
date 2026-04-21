@@ -5,5 +5,5 @@ interface KeyData {
     val createTime: Long
     fun getExpireAt(): Long?
     fun getViewText(): String
-    fun toSubscription(nodeData: NodeData): String
+    fun toSubscription(nodeData: List<NodeData>): String
 }
