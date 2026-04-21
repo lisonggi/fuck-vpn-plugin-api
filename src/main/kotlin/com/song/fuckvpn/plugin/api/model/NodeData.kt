@@ -4,5 +4,5 @@ interface NodeData {
     val data: String
     val createTime: Long
     fun getViewText(): String
-    fun toSubscription(keyData: KeyData?): String
+    fun toSubscription(): String
 }
