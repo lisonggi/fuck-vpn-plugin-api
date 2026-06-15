@@ -13,10 +13,6 @@ licenseReport {
 group = "com.song"
 version = "1.1"
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     testImplementation(kotlin("test"))
 }
